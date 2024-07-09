@@ -11,22 +11,26 @@
     <div class="Calculator">
         <input type="text" id="display" readonly>
         <div class="keys">
-            <button onclick="display('1')">1</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
+            <button onclick="allcleardisplay('AC')">AC</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="lastcleardisplay('C')">C</button>
+            <button onclick="display('/')">/</button>
             <button onclick="display('7')">7</button>
             <button onclick="display('8')">8</button>
             <button onclick="display('9')">9</button>
-            <button onclick="display('0')">0</button>
-            <button onclick="display('+')">+</button>
-            <button onclick="display('-')">-</button>
-            <button onclick="display('/')">/</button>
             <button onclick="display('*')">*</button>
-            <button onclick="cleardisplay()">C</button>
-            <button onclick="calculate()">=</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('00')">00</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button id="equal" onclick="calculate()">=</button>
         </div>
     </div>
     
