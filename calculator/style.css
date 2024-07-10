@@ -41,6 +41,9 @@ button{
     background-color: orange;
     transition: background-color 0.3s;
 }
+#equal:hover{
+    background-color: lightgray;
+}
 button:hover.equal{
     background-color:lightgrey
 
@@ -53,9 +56,23 @@ button:hover.equal{
     font-size: 16px; /* Font size of the text inside the input box */
     border: 1px solid #ccc; /* Border style */
     border-radius: 5px; /* Rounded corners */
+    background-color: lightslategray;
 }
 
 button:hover{
     background-color:lightgrey
 
+}
+
+
+.fullb{
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.calb{
+    background-color: gray;
+    padding: 5px;
+    border-radius: 20px;
 }
