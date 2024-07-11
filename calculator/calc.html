@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- hihiihih -->
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </head>
 <body>
+
     <div class ="calb">
         <div class="fullb">
             <div class="Calculator">
-                <input type="text" id="display" readonly>
+                <input type="text" id="result" >
                 <div class="keys">
-                    <button onclick="allcleardisplay('AC')">AC</button>
-                    <button onclick="display('%')">%</button>
-                    <button onclick="lastcleardisplay('C')">C</button>
-                    <button onclick="display('/')">/</button>
-                    <button onclick="display('7')">7</button>
-                    <button onclick="display('8')">8</button>
-                    <button onclick="display('9')">9</button>
-                    <button onclick="display('*')">*</button>
-                    <button onclick="display('4')">4</button>
-                    <button onclick="display('5')">5</button>
-                    <button onclick="display('6')">6</button>
-                    <button onclick="display('-')">-</button>
-                    <button onclick="display('1')">1</button>
-                    <button onclick="display('2')">2</button>
-                    <button onclick="display('3')">3</button>
-                    <button onclick="display('+')">+</button>
-                    <button onclick="display('00')">00</button>
-                    <button onclick="display('0')">0</button>
-                    <button onclick="display('.')">.</button>
-                    <button id="equal" onclick="calculate()">=</button>
+                    <button onclick="allcleardisplay('AC')" onkeydown="myfunction(event)">AC</button>
+                    <button onclick="display('%')" onkeydown="myfunction(event)">%</button>
+                    <button onclick="lastcleardisplay('C')" onkeydown="myfunction(event)">C</button>
+                    <button onclick="display('/')" onkeydown="myfunction(event)">/</button>
+                    <button onclick="display('7')" onkeydown="myfunction(event)">7</button>
+                    <button onclick="display('8')" onkeydown="myfunction(event)">8</button>
+                    <button onclick="display('9')" onkeydown="myfunction(event)">9</button>
+                    <button onclick="display('*')" onkeydown="myfunction(event)">*</button>
+                    <button onclick="display('4')" onkeydown="myfunction(event)">4</button>
+                    <button onclick="display('5')" onkeydown="myfunction(event)">5</button>
+                    <button onclick="display('6')" onkeydown="myfunction(event)">6</button>
+                    <button onclick="display('-')" onkeydown="myfunction(event)">-</button>
+                    <button onclick="display('1')" onkeydown="myfunction(event)">1</button>
+                    <button onclick="display('2')" onkeydown="myfunction(event)">2</button>
+                    <button onclick="display('3')" onkeydown="myfunction(event)">3</button>
+                    <button onclick="display('+')" onkeydown="myfunction(event)">+</button>
+                    <button onclick="display('00')" onkeydown="myfunction(event)">00</button>
+                    <button onclick="display('0')" onkeydown="myfunction(event)">0</button>
+                    <button onclick="display('.')" onkeydown="myfunction(event)">.</button>
+                    <button  onclick="calculate()">=</button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
+
+
 </body>
 </html>
