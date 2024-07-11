@@ -13,7 +13,7 @@
     <div class ="calb">
         <div class="fullb">
             <div class="Calculator">
-                <input type="text" id="result" >
+                <input type="text" id="result" readonly >
                 <div class="keys">
                     <button onclick="allcleardisplay('AC')" onkeydown="myfunction(event)">AC</button>
                     <button onclick="display('%')" onkeydown="myfunction(event)">%</button>
@@ -34,7 +34,7 @@
                     <button onclick="display('00')" onkeydown="myfunction(event)">00</button>
                     <button onclick="display('0')" onkeydown="myfunction(event)">0</button>
                     <button onclick="display('.')" onkeydown="myfunction(event)">.</button>
-                    <button  onclick="calculate()">=</button>
+                    <button onclick="solve()">=</button>
                 </div>
             </div>
         </div>

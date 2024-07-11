@@ -19,16 +19,15 @@ cal.onkeyup = function (event) {
         console.log("Enter"); 
         let x = document.getElementById("result").value 
         console.log(x); 
-        calculate(); 
+        solve(); 
     } 
 } 
 
 // Function that evaluates the digit and return result 
-function calculate() { 
+function solve() { 
     let x = document.getElementById("result").value 
     let y = math.evaluate(x) 
-    document.getElementById("result").value = y 
-   
+    document.getElementById("result").value=y
 } 
 
 // Function that clear the display 
