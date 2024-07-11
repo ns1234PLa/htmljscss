@@ -7,6 +7,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
 </head>
 <body>
 
@@ -34,7 +35,7 @@
                     <button onclick="display('00')" onkeydown="myfunction(event)">00</button>
                     <button onclick="display('0')" onkeydown="myfunction(event)">0</button>
                     <button onclick="display('.')" onkeydown="myfunction(event)">.</button>
-                    <button onclick="solve()">=</button>
+                    <button onclick="solve()" id="equal">=</button>
                 </div>
             </div>
         </div>

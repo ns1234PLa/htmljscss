@@ -23,12 +23,20 @@ cal.onkeyup = function (event) {
     } 
 } 
 
-// Function that evaluates the digit and return result 
-function solve() { 
-    let x = document.getElementById("result").value 
-    let y = math.evaluate(x) 
-    document.getElementById("result").value=y
-} 
+
+function solve() {
+    const display = document.getElementById('result');
+    try {
+        display.value = math.evaluate(display.value);
+    } catch (error) {
+        display.value = 'Error';
+    }
+}
+
+function lastcleardisplay() {
+    const display = document.getElementById('result');
+    display.value = display.value.slice(0, -1);
+}
 
 // Function that clear the display 
 function allcleardisplay() { 
